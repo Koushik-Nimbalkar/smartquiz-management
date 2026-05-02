@@ -1,0 +1,1 @@
+import com.smartquiz.config.DBConnection; import java.sql.*; public class CheckClassSchema { public static void main(String[] args) throws Exception { try (Connection conn = DBConnection.getConnection(); ResultSet rs = conn.getMetaData().getColumns(null, null, "classes", null)) { while (rs.next()) { System.out.println(rs.getString("COLUMN_NAME")); } } } }

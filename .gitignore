@@ -1,0 +1,35 @@
+# Maven build output
+target/
+
+# Eclipse IDE
+.classpath
+.project
+.settings/
+bin/
+eclipse-bin/
+
+# VS Code / Cursor
+.vscode/
+.cursor/
+
+# Compiled Java classes in root (debug scripts)
+scripts/debug/*.class
+
+# Tomcat/Cargo runtime files
+*.war
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Sensitive local files
+mvnwDebug
+mvnwDebug.cmd
+mvnw.zip
+record_demo.py
+demo_video/
+classpath
+
+# Loose class/java files in root
+WEB-INF/
+com/

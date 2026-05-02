@@ -1,0 +1,1 @@
+import com.smartquiz.config.DBConnection; import java.sql.*; public class CheckUserSchema { public static void main(String[] args) throws Exception { try (Connection conn = DBConnection.getConnection(); ResultSet rs = conn.getMetaData().getColumns(null, null, "users", null)) { while (rs.next()) { System.out.println(rs.getString("COLUMN_NAME")); } } } }
